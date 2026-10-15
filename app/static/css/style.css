@@ -1,0 +1,116 @@
+
+
+/* 1. Basic page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background-color: #f4f7fb;
+}
+
+/* 2. Header */
+header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 8px 0 0;
+}
+
+/* 3. Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 14px;
+    background-color: #244b75;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 4. Main content */
+main {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 22px;
+    border-radius: 8px;
+    border: 1px solid #e0e6ed;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #17365d;
+}
+
+/* 5. Footer */
+footer {
+    text-align: center;
+    padding: 18px;
+    background-color: #17365d;
+    color: white;
+}
+
+/* 6. Small-screen layout */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    main {
+        margin: 18px auto;
+        padding: 0 12px;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
+
+.form-group {
+               /* border: solid 1px #ccc;  */
+            margin-bottom: 10px;
+            }
+            .form-group label {
+                display: inline-block;
+                width:25%;
+                /* border: solid 1px #ccc; */
+                /* margin-bottom: 5px; */
+            }
+            .form-group input,
+            .form-group select {
+                width: 74%;
+                padding: 8px;
+                box-sizing: border-box;
+            }

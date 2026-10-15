@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <meta name="description" content="Digital Dream Academy Training Management System">
+
+    <title>DDATMS | Training Management System</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Digital Dream Academy</h1>
+        <p>Training Management System</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="#learners">Learners</a>
+        <a href="#courses">Courses</a>
+        <a href="#attendance">Attendance</a>
+        <a href="#reports">Reports</a>
+    </nav>
+
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h2>Welcome to DDATMS</h2>
+
+            <p>
+                A proposed system for organizing training records,
+                courses, enrolments, and attendance.
+            </p>
+
+            <button id="welcomeButton" type="button">
+                Show Welcome Message
+            </button>
+
+            <p id="messageOutput" aria-live="polite"></p>
+
+            <!-- JavaScript Practice -->
+            <div id="learnerPractice">
+                <h3>Learner Name Practice</h3>
+
+                <label for="learnerName">
+                    Enter learner name:
+                </label>
+
+                <input
+                    type="text"
+                    id="learnerName"
+                    placeholder="Enter a name"
+                >
+
+                <button id="checkNameButton" type="button">
+                    Check Name
+                </button>
+
+                <p id="validationMessage" aria-live="polite"></p>
+            </div>
+        </section>
+        <style>
+           
+        </style>    
+
+        <!-- Learner Management -->
+        <section id="learners">
+            <h2>Learner Management</h2>
+            <p>Register a learner by completing the form below.</p>
+
+            <form id="learnerForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="Enter learner's full name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter email address"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Course of Interest</label>
+                    <select id="course" name="course" required>
+                        <option value="">Select a course</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Data Analytics">Data Analytics</option>
+                        <option value="Digital Marketing">Digital Marketing</option>
+                        <option value="Software Development">Software Development</option>
+                    </select>
+                </div>
+
+                <button type="submit">Register Learner</button>
+                <p id="learnerMessage" role="status"></p>
+            </form>
+        </section>
+
+
+        <!-- Course Management -->
+        <section id="courses">
+            <h2>Course Management</h2>
+            <p>This section will be developed in a later stage.</p>
+        </section>
+
+        <!-- Attendance Management -->
+        <section id="attendance">
+            <h2>Attendance Management</h2>
+            <p>This section will be developed in a later stage.</p>
+        </section>
+
+        <!-- Reports -->
+        <section id="reports">
+            <h2>Reports</h2>
+            <p>This section will be developed in a later stage.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DDATMS | SIWES Project</p>
+    </footer>
+
+    <!-- Load JavaScript after the page elements -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>
