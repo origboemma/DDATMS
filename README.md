@@ -74,4 +74,6 @@ The `PROJECT_PROGRESS.md` file will serve as the main record of project status, 
 
 **Development approach: Incremental development, testing, and documentation.
 
-**Development priority:** Complete a simple, functional, tested, and documented application within the available timeframe.
+**Development priority:** Complete aq simple, functional, tested, and documented application within the available timeframe.
+
+Version control is managed using Git.
